@@ -9,8 +9,8 @@ Created on Thu Nov  5 20:03:01 2020
 
 def LCS(P, Q, n, m):
     if n == 0 or m == 0 :
-        result = 0 
-    
+        result = 0
+        
     elif P[n-1] == Q[m-1]:
         result = 1 + LCS(P, Q, n-1, m-1)
     
